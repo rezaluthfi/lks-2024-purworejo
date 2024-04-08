@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/primary"
+    tools:context=".FavoriteFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="My Favorite"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/rounded_image" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:text="Based on Category"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_category"
+                android:paddingLeft="6dp"
+                android:paddingTop="4dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:text="Action"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_category"
+                android:paddingLeft="6dp"
+                android:paddingTop="4dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:text="Fantasy"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/rounded_image" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
