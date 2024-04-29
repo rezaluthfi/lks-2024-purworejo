@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle("Hi, Reza!");
+
         //bottom nav
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 

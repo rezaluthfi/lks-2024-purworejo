@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -64,6 +65,7 @@ public class HomeFragment extends Fragment {
                             List<MainModel.Result> results = response.body().getResult();
                             Log.d(TAG, results.toString());
                             mainAdapter.setData(results);
+                            mainAdapter.setOriginalResults(new ArrayList<>(results)); // Set data asli ke adapter
                         }
                     }
 
@@ -74,6 +76,26 @@ public class HomeFragment extends Fragment {
                         // Snackbar.make(requireView(), "Gagal mendapatkan data", Snackbar.LENGTH_SHORT).show();
                     }
                 });
+    }
+
+    //make searchview work
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        SearchView searchView = view.findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                mainAdapter.getFilter().filter(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                mainAdapter.getFilter().filter(newText);
+                return false;
+            }
+        });
     }
 
 }
